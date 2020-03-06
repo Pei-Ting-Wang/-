@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-x=input("請輸入專有名詞:")
+x=input("請輸入專有名詞?")
 url = 'http://163.28.84.216/Entry/Detail?title='+x+'&search='+x+'&order=keyword_title'
 html = requests.get(url)
 sp = BeautifulSoup(html.text, 'html.parser')####
